@@ -1,16 +1,18 @@
 package ru.aiks.d3l3;
 
-public class Circle extends Point{
+public class Circle extends Point implements Scaleable{
 	
 	public int rad;
 	
 	public Circle() 
 	{
-		
+		super();
+		this.rad = 0;
 	}
 	
 	public Circle(int rad) 
 	{
+		super();
 		this.rad = rad;
 	}
 	
@@ -28,7 +30,7 @@ public class Circle extends Point{
 	
 	@Override
 	public String toString() {
-		return String.format("Circle center:(%d,%d), radius: %f color: %s", this.x,this.y, this.rad, this.color);
+		return String.format("Circle center:(%d,%d), radius: %f color: %s\n", this.x,this.y, this.rad, this.color);
 	}
 	
 	@Override
@@ -40,6 +42,6 @@ public class Circle extends Point{
 	@Override
 	public void draw() 
 	{
-		System.out.printf("Circle center:(%d,%d), radius: %d color: %s", this.x,this.y, this.rad, this.color);
+		System.out.printf("Circle center:(%d,%d), radius: %d color: %s\n", this.x,this.y, this.rad, this.color);
 	}
 }

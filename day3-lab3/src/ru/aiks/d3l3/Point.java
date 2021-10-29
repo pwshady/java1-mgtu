@@ -8,7 +8,7 @@ public class Point extends Shape
 	
 	public Point()
 	{
-		super();
+		this(0,0,"");
 	}
 	
 	public Point(int x, int y, String color) 
@@ -21,7 +21,7 @@ public class Point extends Shape
 	@Override
 	public void draw() 
 	{
-		System.out.printf("Point (%d,%d), color: %s", this.x,this.y, this.color);
+		System.out.printf("Point (%d,%d), color: %s\n", this.x,this.y, this.color);
 	}
 	
 	@Override
